@@ -13,6 +13,10 @@
 		01081A6E2502D7F900BA0984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01081A6D2502D7F900BA0984 /* Assets.xcassets */; };
 		01081A712502D7F900BA0984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01081A702502D7F900BA0984 /* Preview Assets.xcassets */; };
 		01081A742502D7F900BA0984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01081A722502D7F900BA0984 /* LaunchScreen.storyboard */; };
+		01081A7C2502D8B900BA0984 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01081A7B2502D8B900BA0984 /* Letter.swift */; };
+		01081A7E2502DF4C00BA0984 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01081A7D2502DF4C00BA0984 /* Word.swift */; };
+		01081A802502E2DE00BA0984 /* SearchGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01081A7F2502E2DE00BA0984 /* SearchGrid.swift */; };
+		01081A8225030B1C00BA0984 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01081A8125030B1C00BA0984 /* WordList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		01081A702502D7F900BA0984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01081A732502D7F900BA0984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01081A752502D7F900BA0984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01081A7B2502D8B900BA0984 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		01081A7D2502DF4C00BA0984 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		01081A7F2502E2DE00BA0984 /* SearchGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGrid.swift; sourceTree = "<group>"; };
+		01081A8125030B1C00BA0984 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				01081A672502D7F500BA0984 /* AppDelegate.swift */,
 				01081A692502D7F500BA0984 /* SceneDelegate.swift */,
 				01081A6B2502D7F500BA0984 /* ContentView.swift */,
+				01081A8125030B1C00BA0984 /* WordList.swift */,
 				01081A6D2502D7F900BA0984 /* Assets.xcassets */,
 				01081A722502D7F900BA0984 /* LaunchScreen.storyboard */,
 				01081A752502D7F900BA0984 /* Info.plist */,
 				01081A6F2502D7F900BA0984 /* Preview Content */,
+				01081A7B2502D8B900BA0984 /* Letter.swift */,
+				01081A7D2502DF4C00BA0984 /* Word.swift */,
+				01081A7F2502E2DE00BA0984 /* SearchGrid.swift */,
 			);
 			path = "word-search";
 			sourceTree = "<group>";
@@ -146,7 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01081A7C2502D8B900BA0984 /* Letter.swift in Sources */,
+				01081A8225030B1C00BA0984 /* WordList.swift in Sources */,
 				01081A682502D7F500BA0984 /* AppDelegate.swift in Sources */,
+				01081A7E2502DF4C00BA0984 /* Word.swift in Sources */,
+				01081A802502E2DE00BA0984 /* SearchGrid.swift in Sources */,
 				01081A6A2502D7F500BA0984 /* SceneDelegate.swift in Sources */,
 				01081A6C2502D7F500BA0984 /* ContentView.swift in Sources */,
 			);
