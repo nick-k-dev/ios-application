@@ -90,6 +90,10 @@ class WordData: ObservableObject {
         return data
     }
     
+    func checkGameOver () -> Bool {
+        return wordLocations.count == 0
+    }
+    
     func clearSelected () -> Void {
         for i in 0..<words.count {
             for j in 0..<words[i].count {

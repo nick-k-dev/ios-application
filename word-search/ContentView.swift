@@ -27,19 +27,18 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Spacer()
             WordList()
             Spacer()
             SearchGrid(words: wordData.words)
+            Spacer()
             CheckButton()
             Spacer()
-            ForEach((0..<wordData.selection.count), id: \.self) {
-                Text(self.wordData.selection[$0])
+        }.background(
+            ZStack {
+                Image("old-books-bg")
+                Rectangle().fill(Color.black.opacity(0.7))
             }
-            ForEach((0..<wordData.foundWordList.count), id: \.self) {
-                Text(self.wordData.foundWordList[$0])
-            }
-        }
+        )
     }
 }
 
