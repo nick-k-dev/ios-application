@@ -5,6 +5,8 @@
 //  Created by Nick on 2020-09-05.
 //  Copyright © 2020 Nick Komarnicki. All rights reserved.
 //
+//  Contains the game logic and global properties
+//
 
 import Foundation
 class WordData: ObservableObject {
@@ -40,7 +42,7 @@ class WordData: ObservableObject {
         var status: Status
     }
     
-    @Published var wordsData = [
+    let wordsData = [
         ["u", "j", "s", "w", "i", "f", "t", "l", "m", "a"],
         ["e", "a", "v", "a", "r", "i", "a", "b", "l", "e"],
         ["l", "v", "z", "y", "i", "b", "c", "h", "p", "l"],
@@ -53,6 +55,7 @@ class WordData: ObservableObject {
         ["o", "b", "j", "e", "c", "t", "i", "v", "e", "c"]
     ]
     
+    //Checks selected letters to see if it matches the coordinates of one of the words.
     func checkSelection () -> Bool {
         var foundWord = false
         for (word, coordinates) in wordLocations {
@@ -78,6 +81,7 @@ class WordData: ObservableObject {
         return foundWord
     }
     
+    //Initializes filling the letter data to build the search grid.
     func fillData () -> [[LetterData]] {
         var data: [[LetterData]] = []
         for i in 0..<wordsData.count {
@@ -90,10 +94,12 @@ class WordData: ObservableObject {
         return data
     }
     
+    //Checks the gameover condition of the game
     func checkGameOver () -> Bool {
         return wordLocations.count == 0
     }
     
+    //Clears selected letters after checking for a word.
     func clearSelected () -> Void {
         for i in 0..<words.count {
             for j in 0..<words[i].count {
