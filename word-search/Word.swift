@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct Word: View {
-    let letters: [String]
+    let letters: [WordData.LetterData]
     
     var body: some View {
         HStack {
             ForEach((0..<letters.count), id: \.self) {
-                Letter(letter: self.letters[$0])
+                Letter(letterData: self.letters[$0])
             }
         }
     }
@@ -22,6 +22,6 @@ struct Word: View {
 
 struct Word_Previews: PreviewProvider {
     static var previews: some View {
-        Word(letters: ["s", "w", "i", "f", "t"])
+        Word(letters: [WordData.LetterData(letter: "x", coord: (0,0), status: WordData.Status.neutral)])
     }
 }

@@ -17,6 +17,8 @@
 		01081A7E2502DF4C00BA0984 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01081A7D2502DF4C00BA0984 /* Word.swift */; };
 		01081A802502E2DE00BA0984 /* SearchGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01081A7F2502E2DE00BA0984 /* SearchGrid.swift */; };
 		01081A8225030B1C00BA0984 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01081A8125030B1C00BA0984 /* WordList.swift */; };
+		01FA702B2504265B0000DF6D /* WordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA702A2504265A0000DF6D /* WordData.swift */; };
+		01FA702D250433260000DF6D /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA702C250433260000DF6D /* CheckButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		01081A7D2502DF4C00BA0984 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		01081A7F2502E2DE00BA0984 /* SearchGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGrid.swift; sourceTree = "<group>"; };
 		01081A8125030B1C00BA0984 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		01FA702A2504265A0000DF6D /* WordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordData.swift; sourceTree = "<group>"; };
+		01FA702C250433260000DF6D /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				01081A672502D7F500BA0984 /* AppDelegate.swift */,
 				01081A692502D7F500BA0984 /* SceneDelegate.swift */,
 				01081A6B2502D7F500BA0984 /* ContentView.swift */,
+				01FA702A2504265A0000DF6D /* WordData.swift */,
+				01FA702C250433260000DF6D /* CheckButton.swift */,
 				01081A8125030B1C00BA0984 /* WordList.swift */,
 				01081A6D2502D7F900BA0984 /* Assets.xcassets */,
 				01081A722502D7F900BA0984 /* LaunchScreen.storyboard */,
@@ -162,9 +168,11 @@
 				01081A8225030B1C00BA0984 /* WordList.swift in Sources */,
 				01081A682502D7F500BA0984 /* AppDelegate.swift in Sources */,
 				01081A7E2502DF4C00BA0984 /* Word.swift in Sources */,
+				01FA702D250433260000DF6D /* CheckButton.swift in Sources */,
 				01081A802502E2DE00BA0984 /* SearchGrid.swift in Sources */,
 				01081A6A2502D7F500BA0984 /* SceneDelegate.swift in Sources */,
 				01081A6C2502D7F500BA0984 /* ContentView.swift in Sources */,
+				01FA702B2504265B0000DF6D /* WordData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

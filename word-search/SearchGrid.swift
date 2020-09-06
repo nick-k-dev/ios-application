@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct SearchGrid: View {
-    let words: [[String]]
+    let words: [[WordData.LetterData]]
     
     var body: some View {
         VStack {
@@ -34,6 +34,6 @@ struct SearchGrid_Previews: PreviewProvider {
         ["o", "b", "j", "e", "c", "t", "i", "v", "e", "c"]
     ]
     static var previews: some View {
-        SearchGrid(words: data)
+        SearchGrid(words: WordData().words)
     }
 }

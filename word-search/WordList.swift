@@ -11,10 +11,11 @@ import SwiftUI
 let words = ["swift", "kotlin", "objectivec", "variable", "java", "mobile"]
 
 struct WordList: View {
+    @EnvironmentObject var wordData: WordData
     var body: some View {
         HStack {
             ForEach((0..<words.count), id: \.self) {
-                Text(words[$0])
+                self.wordData.foundWordList.contains(words[$0]) ? Text(words[$0]).strikethrough() : Text(words[$0])
             }
         }
     }
